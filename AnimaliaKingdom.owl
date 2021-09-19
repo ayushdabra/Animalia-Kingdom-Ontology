@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/onto.owl/"
+         xmlns="http://test.org/onto.owl/">
+
+<owl:Ontology rdf:about="http://test.org/onto.owl"/>
+
+<owl:Class rdf:about="AnimaliaKingdom">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="Invertebrata">
+  <rdfs:subClassOf rdf:resource="AnimaliaKingdom"/>
+</owl:Class>
+
+<owl:Class rdf:about="Porifera">
+  <rdfs:subClassOf rdf:resource="Invertebrata"/>
+  <rdfs:comment xml:lang="en">Examples: Euplectella, Sycon, Spongilla</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Cnidaria">
+  <rdfs:subClassOf rdf:resource="Invertebrata"/>
+  <rdfs:comment xml:lang="en">Examples: Hydra, Sea anemone</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Acoelomata">
+  <rdfs:subClassOf rdf:resource="Invertebrata"/>
+</owl:Class>
+
+<owl:Class rdf:about="Platyhelminthes">
+  <rdfs:subClassOf rdf:resource="Acoelomata"/>
+  <rdfs:comment xml:lang="en">Examples: Planaria, Liverfluke, Tape worm</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Nematoda">
+  <rdfs:subClassOf rdf:resource="Acoelomata"/>
+  <rdfs:comment xml:lang="en">Examples: Ascaris, Wuchereria</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Coelomata">
+  <rdfs:subClassOf rdf:resource="Invertebrata"/>
+</owl:Class>
+
+<owl:Class rdf:about="Annelida">
+  <rdfs:subClassOf rdf:resource="Coelomata"/>
+  <rdfs:comment xml:lang="en">Examples: Nereis, Earthworm, Leech</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Anthropoda">
+  <rdfs:subClassOf rdf:resource="Coelomata"/>
+  <rdfs:comment xml:lang="en">Examples: Aranea, Palaemon, Musca</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Mollusca">
+  <rdfs:subClassOf rdf:resource="Coelomata"/>
+  <rdfs:comment xml:lang="en">Examples: Chiton, Octopus, Pila</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Echinodermata">
+  <rdfs:subClassOf rdf:resource="Coelomata"/>
+  <rdfs:comment xml:lang="en">Examples: Antedon, Echinus, Asterias</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Vertebrata">
+  <rdfs:subClassOf rdf:resource="AnimaliaKingdom"/>
+</owl:Class>
+
+<owl:Class rdf:about="Pisces">
+  <rdfs:subClassOf rdf:resource="Vertebrata"/>
+</owl:Class>
+
+<owl:Class rdf:about="Cartilaginous">
+  <rdfs:subClassOf rdf:resource="Pisces"/>
+  <rdfs:comment xml:lang="en">Examples: Sting ray, Electric ray, Scolidon</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Bony">
+  <rdfs:subClassOf rdf:resource="Pisces"/>
+  <rdfs:comment xml:lang="en">Examples: Exocoetus, Anabas</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Amphibia">
+  <rdfs:subClassOf rdf:resource="Vertebrata"/>
+  <rdfs:comment xml:lang="en">Examples: Salamander, Toad, Hyla</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Reptilia">
+  <rdfs:subClassOf rdf:resource="Vertebrata"/>
+  <rdfs:comment xml:lang="en">Examples: Turtle, Chameleon</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Aves">
+  <rdfs:subClassOf rdf:resource="Vertebrata"/>
+  <rdfs:comment xml:lang="en">Examples: Ostrich, Pigeon, Crow</rdfs:comment>
+</owl:Class>
+
+<owl:Class rdf:about="Mammalia">
+  <rdfs:subClassOf rdf:resource="Vertebrata"/>
+  <rdfs:comment xml:lang="en">Examples: Human, Cat, Whale</rdfs:comment>
+</owl:Class>
+
+
+</rdf:RDF>
